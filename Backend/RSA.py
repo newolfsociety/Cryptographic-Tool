@@ -56,7 +56,7 @@ for i in range(2, pn):
         if facte & fact2 == {1}:
             e = i
 lock = [e, n]
-print('Lock is:', lock)
+
 
 # gen e multiples
 ed = multiples(e)
@@ -69,12 +69,3 @@ for i in ed:
 
 d = int(max(mods) / e)
 key = [d, n]
-print('This is key:', key)
-
-text = input("Enter your text:")
-
-encr = encrypt_text(text, lock)
-print(encr)
-
-decr = decrypt_text(encr, key)
-print(decr)

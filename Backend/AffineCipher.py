@@ -28,9 +28,4 @@ def affine_decrypt(text):
     result= ''.join([chr(((modinv(key[0], 26) * (ord(c) - ord('A') - key[1])) % 26) + ord('A')) for c in text])
     return 'Decrypted text: '+result
 
-text = input('Enter the text: ')
-affine_encrypted_text = affine_encrypt(text)
-print(affine_encrypted_text)
-text = input('Enter the cipher: ')
-affine_decrypted_text=affine_decrypt(text)
-print(affine_decrypted_text)
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <meta charset="UTF-8">
+    <title>MD5</title>
+</head>
+<body>
+
+<font color="#f0f8ff" size="5" >
+<h1 align="center">MD5 EQUIVALENT</h1><br>
+</font>
+<font color="#f0f8ff" size="6" >
+<form action="{{ url_for('crypto4')}}" method="post">
+<p align="center">
+<label for="data_string">Enter the text:</label>
+<input type="text" id="data_string" name="d_string" placeholder="data_string"><br><br>
+<button type="submit" value="Submit">Go!</button>
+</p>
+</form>
+</font>
+</body>
+</html>

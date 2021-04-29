@@ -18,10 +18,4 @@ def DecryptCeasar(text,key):
             result += chr((ord(char) - key - 97) % 26 + 97)
     return "Text: " + result
 
-text = input("Enter the string: ")
-key = int(input("Enter the key: "))
-print(EncryptCeasar(text,key))
-text = input("Enter the string: ")
-key = int(input("Enter the key: "))
-print(DecryptCeasar(text,key))
 

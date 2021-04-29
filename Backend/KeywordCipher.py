@@ -4,8 +4,7 @@
 # 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
 # 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-def key_main():
-    key = input("Enter your key:")
+def key_main(key):
     keyf = ''
     for i in key:
         if i not in keyf:
@@ -32,7 +31,7 @@ def encr(text, keyf):
     return enc
 
 
-def decr(encrypted, keyf):
+def decr(text, keyf):
     alpha = ['~', '}', '|', '{', 'z', 'y', 'x', 'w', 'v', 'u', 't', 's', 'r', 'q', 'p', 'o', 'n', 'm', 'l', 'k', 'j',
              'i',
              'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a', '`', '_', '^', ']', '\\',
@@ -42,19 +41,10 @@ def decr(encrypted, keyf):
              '1', '0', '/', '.', '-', ',', '+', '*', ')', '(', "'", '&', '%', '$',
              '#', '"', '!', ' ']
     dec = ''
-    for i in enc:
+    for i in text:
         ind = keyf.index(i)
         dec = dec + alpha[ind]
     return dec
 
 
-keyf = key_main()
-text = input("Enterr your text:")
-
-print(keyf)
-enc = encr(text, keyf)
-print(enc)
-
-dec = decr(enc, keyf)
-print(dec)
 
