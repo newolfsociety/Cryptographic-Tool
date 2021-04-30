@@ -13,9 +13,10 @@ Hashing is the transformation of a string of characters into a usually shorter f
 
 
 # Web app:
-<picture>
+ <picture>
  
  
- Team Members:
+ # Team Members:
+ 
  Charvi Bannur: https://github.com/charvibannur
  Vishnu Bharadwaj: https://github.com/Vishnu1426
