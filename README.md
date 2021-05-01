@@ -1,6 +1,10 @@
 # Cryptographic-Tool
 Cryptography is a method of protecting information and communications through the use of codes, so that only those for whom the information is intended can read and process it.
 
+# Brief Description
+This project contains some of the commonly used or were commonly used cryptographic algorithms. 
+There are two symmetric algorithms, two assymetric algorithms and two hashing algorithms.
+
 # Symmetric, Asymmetric and Hashing:
 Symmetric-key algorithms are algorithms for cryptography that use the same cryptographic keys for both the encryption of plaintext and the decryption of ciphertext. While symmetric encryption is an older method of encryption, it is faster and more efficient than asymmetric encryption.Unfortunately, symmetric encryption does come with its own drawbacks. Its weakest point is its aspects of key management.
 
@@ -10,7 +14,19 @@ Hashing is the transformation of a string of characters into a usually shorter f
 
 # Cryptographic Algorithms:
 
+# 1. Caeser Cipher
+It is a type of substitution cipher in which each character in the plaintext is replaced by a letter some fixed number of positions down the ASCII table. There is a provision for the user to enter the text to be encypted and the key (the number of positions to be shifted), using which every character in the text entered will be replaced by a character which is key number of ASCII values ahead. For Decryption, every character in the cipher text is replaced by a character which is key number of ASCII values behind.
 
+# 2. Keyword Cipher
+It is a type of monoalphabetic or monocharacter substitution where every character of the entered text is replaced by a character which occupies the same index in the key. There is a provision for the user to enter the text to be encypted and also the key using which a keyword will be generated. The key will have the rest of the character set appended to it which becomes the keyword. Encryption and Decryption are both done by matching the index of given text with keyword.
+
+# 3. Affine Cipher
+
+# 4. RSA Algorithm
+It is an assymetric algorithm, meaning it uses a public key for encryption and a private key for decryption. Two prime numbers, p and q are selected. The product of these prime numbers is taken as n. (p-1)*(q-1) is taken as pn. A number e is then calculated which is co-prime with both n and pn and less than pn. [e,n] is the publc key. If t is the ASCII value of a character, then its encrypted form will be (t^e)%n. For private key, multiples of e which satisfy en%pn == 1, where en is a multiple of e, calculated. [en,n] is the private key. If t is the ASCII value of the encrypted character then, (t^en)%n will be the ASCII value of the decrypted character.
+
+# 5. Secure Hashing Algorithms(SHA)
+SHA is a family of cryptographic hashing algorithms.
 
 # Web app:
  <picture>
