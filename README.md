@@ -33,7 +33,7 @@ SHA is a family of cryptographic hashing algorithms. It takes the text entered b
 # MD5
 It is a cryptographic hashing algorithm from the message digest family. The MD5 hashing algorithm takes a message of arbitrary length as input and produces as output a 128-bit “fingerprint” or “message digest” of the input message.It is a complex sequence of simple binary operations, such as exclusive OR (XORs) and rotations, that are performed on input data and produce a 128-bit digest. It is faster than SHA but not as secure.
 # Web app:
- <picture>
+<img width="946" alt="Screenshot1" src="https://github.com/charvibannur/Cryptographic-Tool/blob/main/Screenshot%202021-05-01%20185300.png">
  
  
  # Team Members:
