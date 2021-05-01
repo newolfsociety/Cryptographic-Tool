@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href= "{{url_for('static',filename='sha.css')}}">
     <meta charset="UTF-8">
-    <title>SHA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-<font color="#f0f8ff" size="5" >
-<h1 align="center">SHA EQUIVALENT</h1><br>
-</font>
-<font color="#f0f8ff" size="6" >
-<form action="{{ url_for('crypto5')}}" method="post">
-<p align="center">
-<label for="data_string">Enter the text:</label>
-<input type="text" id="data_string" name="d_string" placeholder="data_string"><br><br>
-<input type="radio" id="SHA1" name="option" value="SHA1">SHA1</input><br><br>
-<input type="radio" id="SHA256" name="option" value="SHA256">SHA256</input><br><br>
-<input type="radio" id="SHA224" name="option" value="SHA224">SHA224</input><br><br>
-<input type="radio" id="SHA384" name="option" value="SHA384">SHA384</input><br><br>
-<input type="radio" id="SHA512" name="option" value="SHA512">SHA512</input><br><br>
-<button type="submit" value="Submit">Go!</button>
-</p>>
-</form>
-</font>
+    <div class = 'container'>
+        <div class = 'header'>
+            <ul type = 'none'>
+                <form action="http://localhost:5000/" method = 'POST'>
+                    <li><button id = 'head' type = 'submit'>(r¥pt0gr@p#£r</button></li>
+                </form>
+            </ul>
+        </div>
+        <h1>Secure Hash Algorithms (SHA)</h1>
+    <form action = 'http://localhost:5000/sha' method = 'POST'>
+        <div class = 'entry'>
+            <p id = 'enter' >Enter your text: <input id = 'box' type = 'text' name = 'given'></p>
+            <br><br>
+        </div>
+        <div class = 'choice'>
+            <p id = 'hash'>
+        SHA1: <input type = 'radio' name = 'option' value = 'SHA1'>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        SHA224: <input type = 'radio' name = 'option' value = 'SHA224'>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        SHA256: <input type = 'radio' name = 'option' value = 'SHA256'>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        SHA384: <input type = 'radio' name = 'option' value = 'SHA384'>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        SHA512: <input type = 'radio' name = 'option' value = 'SHA512'>
+        <br><br>
+        </p>
+        <div class = 'submit'>
+            <br><br><br><br>
+            <button id = 'submit' type = 'submit'>Go!</button>
+        </div>
+        </div>
+        </form>
+    </div>
 </body>
 </html>

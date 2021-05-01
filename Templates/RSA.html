@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href= "{{url_for('static',filename='rsa.css')}}">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSA</title>
-</head>
+    </head>
 <body>
-
-<font color="#f0f8ff" size="5" >
-<h1 align="center">ENCRYPT/DECRYPT A RSA</h1><br>
-</font>
-<font color="#f0f8ff" size="6" >
-<form action="{{ url_for('crypto6')}}" method="post">
-<p align="center">
-<label for="data_string">Enter the text:</label>
-<input type="text" id="data_string" name="d_string" placeholder="data_string"><br><br>
-<input type="radio" id="Encrypt" name="option" value="Encrypt">Encrypt</input>
-<input type="radio" id="Decrypt" name="option" value="Decrypt">Decrypt</input><br><br>
-<button type="submit" value="Submit">Go!</button>
-</p>
-</form>
-</font>
+    <div class = 'container'>
+        <div class = 'header'>
+            <ul type = 'none'>
+                <form action="http://localhost:5000/" method = 'POST'>
+                    <li><button id = 'head' type = 'submit'>(r¥pt0gr@p#£r</button></li>
+                </form>
+            </ul>
+        </div>
+        <h1>RSA Algorithm</h1>
+        <form action = 'http://localhost:5000/rsa' method = 'POST'>
+            <div class = 'entry'>
+                <p id = 'enter' >Enter your text: <input id = 'box' type = 'text' name = 'given'></p>
+                <br><br>
+            </div>    
+            <div class = 'choice'>
+                    <!-- <p id = 'encrypt'>Encrypt:<input type = 'radio' name = 'option' value = 'encrypt'></p> -->
+                    <p id = 'encdec'>
+                    Encrypt:<input type = 'radio' name = 'option' value = 'encrypt'>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Decrypt:<input type = 'radio' name ='option' value = 'decrypt'>   
+                    </p>
+            </div>
+            <div class = 'submit'>
+                <br><br><br><br>
+                <button id = 'submit' type = 'submit'>Go!</button>
+            </div>
+        </form>
+            
+    </div>
 </body>
 </html>

@@ -4,7 +4,7 @@
 # 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
 # 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-def key_main(key):
+def Keyword_key_main(key):
     keyf = ''
     for i in key:
         if i not in keyf:
@@ -15,7 +15,7 @@ def key_main(key):
     return keyf
 
 
-def encr(text, keyf):
+def Keyword_Encr(text, keyf):
     alpha = ['~', '}', '|', '{', 'z', 'y', 'x', 'w', 'v', 'u', 't', 's', 'r', 'q', 'p', 'o', 'n', 'm', 'l', 'k', 'j',
              'i',
              'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a', '`', '_', '^', ']', '\\',
@@ -31,7 +31,7 @@ def encr(text, keyf):
     return enc
 
 
-def decr(text, keyf):
+def Keyword_Decr(text, keyf):
     alpha = ['~', '}', '|', '{', 'z', 'y', 'x', 'w', 'v', 'u', 't', 's', 'r', 'q', 'p', 'o', 'n', 'm', 'l', 'k', 'j',
              'i',
              'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a', '`', '_', '^', ']', '\\',
