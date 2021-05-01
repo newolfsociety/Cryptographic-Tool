@@ -3,7 +3,7 @@ Cryptography is a method of protecting information and communications through th
 
 # Brief Description
 This project contains some of the commonly used or were commonly used cryptographic algorithms. 
-There are two symmetric algorithms, two assymetric algorithms and two hashing algorithms.
+There are three symmetric algorithms, one assymetric algorithm and two hashing algorithms.
 
 # Symmetric, Asymmetric and Hashing:
 Symmetric-key algorithms are algorithms for cryptography that use the same cryptographic keys for both the encryption of plaintext and the decryption of ciphertext. While symmetric encryption is an older method of encryption, it is faster and more efficient than asymmetric encryption.Unfortunately, symmetric encryption does come with its own drawbacks. Its weakest point is its aspects of key management.
@@ -22,6 +22,7 @@ It is a type of monoalphabetic or monocharacter substitution where every charact
 
 # 3. Affine Cipher
 The Affine cipher is a type of monoalphabetic substitution cipher, wherein each letter in an alphabet is mapped to its numeric equivalent, encrypted using a simple mathematical function, and converted back to a letter. 
+
 <img width="946" alt="Screenshot1" src="https://www.tutorialspoint.com/cryptography_with_python/images/affine_cipher.jpg">
 
 # 4. RSA Algorithm
@@ -31,7 +32,8 @@ It is an assymetric algorithm, meaning it uses a public key for encryption and a
 SHA is a family of cryptographic hashing algorithms.
 
 # Web app:
- <picture>
+
+ <img width="946" alt="Screenshot1" src="">
  
  
  # Team Members:
