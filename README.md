@@ -1,9 +1,9 @@
-# Cryptographic-Tool
+# Cryptographer
 Cryptography is a method of protecting information and communications through the use of codes, so that only those for whom the information is intended can read and process it.
 
 # Brief Description
 This project contains some of the commonly used or were commonly used cryptographic algorithms. 
-There are two symmetric algorithms, two assymetric algorithms and two hashing algorithms.
+There are three symmetric algorithms, one assymetric algorithm and two hashing algorithms.
 
 # Symmetric, Asymmetric and Hashing:
 Symmetric-key algorithms are algorithms for cryptography that use the same cryptographic keys for both the encryption of plaintext and the decryption of ciphertext. While symmetric encryption is an older method of encryption, it is faster and more efficient than asymmetric encryption.Unfortunately, symmetric encryption does come with its own drawbacks. Its weakest point is its aspects of key management.
