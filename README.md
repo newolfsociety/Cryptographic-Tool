@@ -30,7 +30,7 @@ It is an assymetric algorithm, meaning it uses a public key for encryption and a
 # 5. Secure Hashing Algorithms(SHA)
 SHA is a family of cryptographic hashing algorithms. It takes the text entered by the user and uses random hex values, bitwise operations, modular additions, and compression functions on it and generates an encrypted text. It is mainly used for storing passwords and since it is a one way encryption, the original message cannot be retrieved from the hashed text. The Federal Information Processing Standard (FIPS 180-2) specifies four secure hash algorithms – SHA-1, SHA-256, SHA-384, and SHA-512 – all of which are iterative, one-way hash functions that can process a message with a maximum length of 264 – to 2128 – bits to produce a 160- to 512-bit condensed representation called a message digest.
 
-# MD5
+#6. MD5
 It is a cryptographic hashing algorithm from the message digest family. The MD5 hashing algorithm takes a message of arbitrary length as input and produces as output a 128-bit “fingerprint” or “message digest” of the input message.It is a complex sequence of simple binary operations, such as exclusive OR (XORs) and rotations, that are performed on input data and produce a 128-bit digest. It is faster than SHA but not as secure.
 # Web app:
 <img width="946" alt="Screenshot1" src="https://github.com/charvibannur/Cryptographic-Tool/blob/main/Screenshot%202021-05-01%20185300.png">
