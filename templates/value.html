@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='value.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        *
+        {
+            margin:0;
+        }
+        body
+        {
+			margin: 0;
+			padding: 0;
+			font-family: "serif";
+			background: rgb(180, 156, 156) url("bg.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-blend-mode: darken;
+			color:rgb(0, 0, 0);
+        }
+    </style> -->
+</head>
+<body>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    {% if alg == 'RSA' %}
+
+        {% if e == 'encrypted' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Encrypted text using RSA is:  {{value}}</h1><br>
+            </font>
+        {% endif %}
+
+        {% if e == 'decrypted' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Decrypted text using RSA is:  {{value}}</h1><br>
+            </font>
+        {% endif %}
+
+    {% endif %}
+
+    {% if alg == 'Keyword' %}
+
+        {% if e == 'encrypted' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Encrypted text using Keyword Cipher is:  {{value}}</h1><br>
+            </font>
+        {% endif %}
+
+        {% if e == 'decrypted' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Decrypted text using Keyword Cipher is:  {{value}}</h1><br>
+            </font>
+        {% endif %}
+
+    {% endif %}
+
+    {% if alg == 'MD5' %}
+
+        {% if e == 'Nothing' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Hashed text using MD5 is:  {{value}}</h1><br>
+            </font>
+        {% endif %}
+
+    {% endif %}
+
+    {% if alg == 'Caeser' %}
+
+        {% if e == 'encrypted' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Encrypted text using Caeser Cipher is:  {{value}}</h1><br>
+            </font>
+        {% endif %}
+
+        {% if e == 'decrypted' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Decrypted text using Caeser Cipher is:  {{value}}</h1><br>
+            </font>
+        {% endif %}
+
+    {% endif %}
+
+    {% if alg == 'SHA' %}
+
+        {% if e == 'sha1' %}
+            <font color="#f0f8ff" size="6" >
+                <h1 align="center">Hashed text using SHA1 is:  </h1><br>
+                <p size = "6" align="center">{{value}}</p>
+            </font>
+        {% endif %}
+        {% if e == 'sha224' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Hashed text using SHA224 is:  </h1><br>
+                <p size = "5" align="center">{{value}}</p>
+            </font>
+        {% endif %}
+        {% if e == 'sha256' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Hashed text using SHA256 is:  </h1><br>
+                <p size = "5" align="center">{{value}}</p>
+            </font>
+        {% endif %}
+        {% if e == 'sha384' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Hashed text using SHA384 is:  </h1><br>
+                <p size = "5" align="center">{{value}}</p>
+            </font>
+        {% endif %}
+        {% if e == 'sha512' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Hashed text using SHA512 is:  </h1><br>
+                <p size = "5" align="center">{{value}}</p>
+            </font>
+        {% endif %}
+    {% endif %}
+
+    {% if alg == 'Affine' %}
+
+        {% if e == 'encrypted' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Encrypted text using Affine Cipher is:  {{value}}</h1><br>
+            </font>
+        {% endif %}
+
+        {% if e == 'decrypted' %}
+            <font color="#f0f8ff" size="5" >
+                <h1 align="center">Decrypted text using Affine Cipher is:  {{value}}</h1><br>
+            </font>
+        {% endif %}
+
+    {% endif %}
+
+    <!-- <h1> Encrypted text using RSA is :{{value}} </h1>//-->
+</body>
+</html>

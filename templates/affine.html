@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href= "{{url_for('static',filename='caeser.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'header'>
+            <ul type = 'none'>
+                <form action="http://localhost:5000/" method = 'POST'>
+                    <li><button id = 'head' type = 'submit'>(r¥pt0gr@p#£r</button></li>
+                </form>
+            </ul>
+        </div>
+    </div>
+        <h1>Affine Cipher</h1>
+    <form action = 'http://localhost:5000/affine' method = 'POST'>
+        <div class = 'entry'>
+            <p id = 'enter' >Enter your text: <input id = 'box' type = 'text' name = 'given'></p>
+            <br><br>
+        </div>
+        <div class = 'choice'>
+            <p id = 'encdec'>
+            Encrypt:<input type = 'radio' name = 'option' value = 'encrypt'>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Decrypt:<input type = 'radio' name ='option' value = 'decrypt'>
+            </p>
+        </div>
+    <div class = 'submit'>
+        <br><br><br><br>
+        <button id = 'submit' type = 'submit'>Go!</button>
+    </div>
+    </form>
+
+</body>
+</html>
